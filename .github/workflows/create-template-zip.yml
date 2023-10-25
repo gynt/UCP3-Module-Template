@@ -1,0 +1,16 @@
+name: Create template zip
+on: push
+
+jobs:
+  create-template-zip:
+    name: Create template zip
+    runs-on: windows-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v4
+      - uses: actions/upload-artifact@v3
+        with:
+          name: UCP3-Module-Template-visual-studio
+          path: |
+            src/*
+            !src/.vs
