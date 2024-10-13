@@ -1,9 +1,12 @@
 # The name of your module
 name: ucp3-module-development-template
-# The version of your module
+# The version of your module (Semantic Versioning, note versions < 1.0.0 are slightly special)
 version: 0.0.1
 # The date of this version
 date: 2023
 # The author
 author: gynt
-specification-version: 1.0.0
+# The meta version describes for the GUI and the backend how this file should be read.
+# Not to be confused with the version of your extension
+meta:
+  version: 1.0.0
